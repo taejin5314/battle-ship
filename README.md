@@ -8,7 +8,7 @@ This repository is built to practice HTML, CSS, JS, JQuery and AJAX front-end sk
 
 1. Fork this repository, then clone your fork of this repository.
 2. Install dependencies using the `npm install` command.
-3. Start the web server using the `npm start
+3. Start the web server using the `npm start` command.
 
 ## Battleship rules
 
