@@ -3,12 +3,41 @@
   display: flex;
 }
 
+.main-content .board-container {
+  display: grid;
+}
+
+.main-content .board-container .cords {
+  display: grid;
+  text-shadow: 0 2px 2px #000;
+  font-size: 1.5rem;
+}
+
+.main-content .board-container .letters {
+  justify-content: space-evenly;
+  grid-template-columns: repeat(10,3rem);
+  grid-column: 2/3;
+}
+
+.main-content .board-container .numbers {
+  align-items: space-evenly;
+}
+
+.main-content .board-container .letter,
+.main-content .board-container .number {
+  height: 3rem;
+  width: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .main-content table {
   border: 3px solid black;
 }
 
 .main-content table tr td {
   border: 3px solid grey;
-  height: 50px;
-  width: 50px;
+  width: 3rem;
+  height: 3rem;
 }
