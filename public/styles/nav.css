@@ -6,6 +6,7 @@ nav {
   width: 100%;
   background-color: #3d3d3d;
   padding: 15px 0;
+  margin-top: -200px;
 }
 
 nav .nav-left button {
