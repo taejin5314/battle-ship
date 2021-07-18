@@ -1,6 +1,8 @@
 .main-content {
   margin-top: 200px;
   display: flex;
+  justify-content: space-between;
+  padding: 0 50px;
 }
 
 .main-content .board-container {
@@ -32,12 +34,18 @@
   align-items: center;
 }
 
-.main-content table {
+.main-content .board-container table {
   border: 3px solid black;
 }
 
-.main-content table tr td {
+.main-content .board-container table tr td {
   border: 3px solid grey;
   width: 3rem;
   height: 3rem;
+}
+
+.main-content .game-info {
+  font-size: 1.8em;
+  display: flex;
+  align-items: center;
 }
