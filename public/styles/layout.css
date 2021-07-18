@@ -3,8 +3,13 @@
  * https://css-tricks.com/international-box-sizing-awareness-day/
  * Do not modify these two selectors, please
  */
- html {
+html {
   box-sizing: border-box;
+}
+
+@font-face {
+  font-family: zorque;
+  src: url('../fonts/zorque.ttf');
 }
 
 *, *:before, *:after {
@@ -12,10 +17,10 @@
 }
 
 body {
-  color: #545149;
-  background-color: #f4f1ec;
+  color: #ffffff;
+  background-color: #242424;
   font-size: 24px;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: zorque;
   min-width: 300px;
 }
 body::-webkit-scrollbar {
