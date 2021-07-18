@@ -1,0 +1,14 @@
+.main-content {
+  margin-top: 200px;
+  display: flex;
+}
+
+.main-content table {
+  border: 3px solid black;
+}
+
+.main-content table tr td {
+  border: 3px solid grey;
+  height: 50px;
+  width: 50px;
+}
