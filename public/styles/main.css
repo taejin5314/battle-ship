@@ -1,32 +1,32 @@
 .main-content {
-  margin-top: 200px;
   display: flex;
+  margin-top: 200px;
   justify-content: space-between;
   padding: 0 50px;
 }
 
-.main-content .board-container {
+.board-container {
   display: grid;
 }
 
-.main-content .board-container .cords {
+.board-container .cords {
   display: grid;
   text-shadow: 0 2px 2px #000;
   font-size: 1.5rem;
 }
 
-.main-content .board-container .letters {
+.board-container .letters {
   justify-content: space-evenly;
-  grid-template-columns: repeat(10,3rem);
+  grid-template-columns: repeat(10, 3rem);
   grid-column: 2/3;
 }
 
-.main-content .board-container .numbers {
+.board-container .numbers {
   align-items: space-evenly;
 }
 
-.main-content .board-container .letter,
-.main-content .board-container .number {
+.board-container .letter,
+.board-container .number {
   height: 3rem;
   width: 3rem;
   display: flex;
@@ -34,18 +34,69 @@
   align-items: center;
 }
 
-.main-content .board-container table {
+.board-container table {
   border: 3px solid black;
 }
 
-.main-content .board-container table tr td {
+.board-container table tr td {
   border: 3px solid grey;
   width: 3rem;
   height: 3rem;
 }
 
 .main-content .game-info {
+  min-width: 200px;
   font-size: 1.8em;
   display: flex;
   align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 1480px) {
+  .board-container .letters {
+    grid-template-columns: repeat(10, 2.5rem);
+  }
+
+  .board-container .letter,
+  .board-container .number {
+    height: 2.5rem;
+    width: 2.5rem;
+    min-width: 2.5rem;
+  }
+
+  .board-container table tr td {
+    width: 2.5rem;
+    height: 2.5rem;
+    min-width: 2.5rem;
+  }
+
+  .main-content .game-info {
+    font-size: 1.4em;
+  }
+}
+
+
+
+@media only screen and (max-width: 1024px) {
+  .main-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .board-container .letters {
+    grid-template-columns: repeat(10, 2.5rem);
+  }
+  .board-container .letter,
+  .board-container .number {
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+
+  .board-container table tr td {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .main-content .game-info {
+    font-size: 1.4em;
+  }
 }
