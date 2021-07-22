@@ -22,6 +22,7 @@ body {
   font-size: 24px;
   font-family: zorque;
   min-width: 300px;
+  position: relative;
 }
 body::-webkit-scrollbar {
   display: none;
