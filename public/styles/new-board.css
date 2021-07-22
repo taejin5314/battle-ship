@@ -1,0 +1,24 @@
+.new-game-board {
+  width: 100%;
+  height: 700px;
+  position: fixed;
+  top: calc(50vh - 350px);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3em;
+}
+
+.new-game-board-container {
+  width: 96%;
+  height: 100%;
+  border-radius: 10px;
+  background: rgba(48, 48, 48, 0.8);
+  box-shadow: 10px 10px 4px 2px rgba(0, 0, 0, 0.4);
+  border: 1px solid white;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
